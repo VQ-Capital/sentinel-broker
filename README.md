@@ -1,4 +1,8 @@
-# 🔀 sentinel-broker (The Nervous System)
+# 🔀 sentinel-event-mesh (Legacy: sentinel-broker)
 
-**Sorumluluk:** NATS JetStream sunucusunun Stream, KV Store ve Consumer yapılandırmalarını barındırır.
-**Kural:** Bu repo bir yazılım içermez. Terraform, Ansible veya NATS CLI komut dosyalarını (script) barındırır. Sistemdeki veri kanallarının (Retention policy, Max memory limits vb.) tanımlandığı yerdir.
+**Domain:** Infrastructure as Code (IaC) & Messaging Topology
+**Rol:** Sinir Sistemi Konfigürasyonu
+
+Bu repo bir Rust veya C++ yazılımı **içermez**. NATS JetStream'in çalışması için gereken mimari tanımları (Terraform, Ansible, Shell Script) barındırır. NATS'taki kanalların (Streams) boyutları, hangi verinin bellekte ne kadar kalacağı (Retention Policy) ve veri düşme (Drop) kuralları burada tanımlanır.
+
+- **Altyapı Hedefi:** NATS JetStream (In-Memory HFT Mode)
